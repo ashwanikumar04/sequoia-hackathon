@@ -33,7 +33,9 @@ android {
             debuggable true
             minifyEnabled true
             shrinkResources true
-            buildConfigField "String", "SERVER_BASE_URL", "\"http://100.96.246.196:8080/\""
+            //buildConfigField "String", "SERVER_BASE_URL", "\"http://100.96.246.196:8080/\""
+            buildConfigField "String", "SERVER_BASE_URL", "\"http://52.43.156.192:8080/\""
+
             signingConfig signingConfigs.debugConfig
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

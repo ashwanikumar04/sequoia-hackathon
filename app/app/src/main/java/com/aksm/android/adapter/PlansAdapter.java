@@ -36,7 +36,7 @@ public class PlansAdapter extends RecyclerView.Adapter<PlansAdapter.ItemViewHold
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.app_bar, parent, false);
+        View view = inflater.inflate(R.layout.r_movie, parent, false);
         ItemViewHolder holder = new ItemViewHolder(view);
         holder.setClickHandler(handler);
         return holder;
