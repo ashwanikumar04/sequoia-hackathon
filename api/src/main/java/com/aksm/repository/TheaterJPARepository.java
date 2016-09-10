@@ -13,6 +13,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TheaterJPARepository extends ElasticsearchRepository<Theater, String> {
 
-    @Query("{ \"geo_distance\": { \"distance\": \"?0\", \"location\": { \"lat\": ?1, \"lon\": ?2 } }}")
-    Page<Theater> findTheatersInRange(String distance, double lat, double lang, Pageable pageable);
+    @Query("{ \"geo_distance\": { \"distance\": \"?0km\", \"location\": { \"lat\": ?1, \"lon\": ?2 } }}")
+    Page<Theater> findTheatersInRange(double distance, double lat, double lang, Pageable pageable);
 }

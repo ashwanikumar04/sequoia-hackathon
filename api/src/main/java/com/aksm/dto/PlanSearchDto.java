@@ -13,9 +13,8 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class TheaterSearchDto {
-    @NotNull
-    private String distance;
+public class PlanSearchDto {
+    private double distance;
     private double lat;
     private double lon;
     @NotNull

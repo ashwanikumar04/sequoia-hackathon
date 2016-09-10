@@ -10,7 +10,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Location {
-    private double lon;
-    private double lat;
+public class Plan {
+    private Movie movie;
+    private Theater theater;
+    private Restaurant restaurant;
 }

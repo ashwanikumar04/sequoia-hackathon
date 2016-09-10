@@ -1,6 +1,7 @@
 package com.aksm.dto;
 
 import lombok.*;
+import org.elasticsearch.search.sort.SortOrder;
 
 /**
  * Created by AshwaniK on 9/10/2016.
@@ -10,9 +11,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class PagingDto {
-    private int start;
-    private int end;
-    private SortDto sort;
-    private int total;
+public class SortDto {
+    SortOrder order;
 }

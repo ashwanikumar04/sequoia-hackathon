@@ -1,14 +1,16 @@
 package com.aksm.domain;
 
+import com.aksm.common.Constants;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.core.geo.GeoPoint;
 
 /**
  * Created by AshwaniK on 9/10/2016.
  */
-@Document(indexName = "moviedb", type = "theatre", shards = 1, replicas = 0, refreshInterval = "-1")
+@Document(indexName = Constants.INDEX_NAME, type = Constants.TYPE_THEATER, shards = 1, replicas = 0, refreshInterval = "-1")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,28 +18,28 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @Builder
 public class Theater {
     @Id
-    public String id;
+    private String id;
     @JsonProperty("VenueCode")
-    public String venueCode;
+    private String venueCode;
     @JsonProperty("VenueAddress")
-    public String venueAddress;
+    private String venueAddress;
     @JsonProperty("IsATMOSEnabled")
-    public String isATMOSEnabled;
+    private String isATMOSEnabled;
     @JsonProperty("VenueLegends")
-    public String venueLegends;
+    private String venueLegends;
     @JsonProperty("VenueName")
-    public String venueName;
+    private String venueName;
     @JsonProperty("VenueLongitude")
-    public String venueLongitude;
-    public Location location;
+    private String venueLongitude;
+    private GeoPoint location;
     @JsonProperty("VenueSubRegionCode")
-    public String venueSubRegionCode;
+    private String venueSubRegionCode;
     @JsonProperty("CinemaUnpaidFlag")
-    public String cinemaUnpaidFlag;
+    private String cinemaUnpaidFlag;
     @JsonProperty("CompanyCode")
-    public String companyCode;
+    private String companyCode;
     @JsonProperty("VenueLatitude")
-    public String venueLatitude;
+    private String venueLatitude;
     @JsonProperty("VenueSubRegionName")
-    public String venueSubRegionName;
+    private String venueSubRegionName;
 }
