@@ -8,7 +8,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 /**
  * Created by AshwaniK on 9/10/2016.
  */
-@Document(indexName = "moviedb", type = "theater", shards = 1, replicas = 0, refreshInterval = "-1")
+@Document(indexName = "moviedb", type = "theatre", shards = 1, replicas = 0, refreshInterval = "-1")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,6 +16,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @Builder
 public class Theater {
     @Id
+    public String id;
     @JsonProperty("VenueCode")
     public String venueCode;
     @JsonProperty("VenueAddress")

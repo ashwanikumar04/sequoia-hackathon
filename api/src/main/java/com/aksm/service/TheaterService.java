@@ -1,6 +1,8 @@
 package com.aksm.service;
 
 import com.aksm.domain.Theater;
+import com.aksm.dto.PagingContainerDto;
+import com.aksm.dto.TheaterSearchDto;
 
 import java.util.List;
 
@@ -12,4 +14,7 @@ public interface TheaterService {
     Theater getTheatersById(String id);
 
     List<Theater> getTheatersByName(String name);
+
+    PagingContainerDto<List<Theater>> getTheatersInRange(TheaterSearchDto searchDto);
+
 }
