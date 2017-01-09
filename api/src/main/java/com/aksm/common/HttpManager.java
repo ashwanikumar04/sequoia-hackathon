@@ -1,9 +1,4 @@
-/*
- *  Copyright (c) 2016. Aurus Network Infotech Pvt Ltd and/or SuperProfs.com- All rights reserved.
- *    Unauthorized copying of this file, via any medium is strictly prohibited
- *    Proprietary and confidential
- *    <email>admin@superprofs.com</email>
- */
+
 
 package com.aksm.common;
 
